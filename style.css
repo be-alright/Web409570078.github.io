@@ -1,7 +1,7 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 300;
-    background-image: url("./beach.JPG");
+    background-image: url("./DSC01701.JPG");
     background-size: cover;
 }
 h1{
@@ -11,5 +11,5 @@ h1{
     height: 50px;
 }
 div.otherlink a{
-color: rgb(88, 118, 156);
+color: rgb(58, 120, 201);
 }
