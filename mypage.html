@@ -11,30 +11,102 @@
     <meta name="author" content="Your name" />
     <base target="_blank" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="./photo/DSC01701.JPG">
+  <link rel="shortcut icon" href="./picture/檔案_027.jpeg">
     <link rel="stylesheet" href="./Style.css">
-
+    <p>
+        <a id="my-click">Click Me</a>
+      </p>
+      
+      <div id="foo" style="border: 1px solid red;">
+        <p>bar</p>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        $("#my-click").click(function(){
+          $("#foo").html('<h1>zoo</h1>');
+        })
+      </script>
 </head>
 
 <body>
-    <h1>
-        自我介紹
-    </h1>
-    <h2>姓名:詹欣儒
-    </h2>
-    <h3>興趣:聽音樂、打羽球</h3>
-
-    <h3>★平常不論是出去玩或是搭捷運時喜歡沿途看風景，以下連結有放幾張風景照片，歡迎瀏覽看看!</h3>
-    <div class="otherlink">
-        <a href="https://cindychan9256.wixsite.com/my-site-6/gallery">相片瀏覽</a>
-
-    </div>
-    <p><img src="./DSC01701.JPG" width="500" alt="圖片"></p>
+    <main align="center" valign="center">
+        <section class="left">
+          <h1>
+            Wellcome to My Page~~~
+          </h1>
+          <br>
+         <h2>
+             關於我~
+         </h2>
+         <p>
+            很容易相信別人:被騙都不知道......
+          </p>
+          <p>
+            樂觀:即便心情不好也不會持續太久~
+          </p>
+          
+          <p>
+            愛睡覺:但因為家住太遠不的不早起......
+          </p>
+          
+          <br>
+          <p><img src="./DSC01701.JPG" width="350px" style="display:block; margin:auto;" alt="圖片">
+          </p>
+        </section>
+        <section class="right">
+          <h3 class="heading" style="color: rgb(99, 98, 192)" onclick="alert('你點選了h1標籤')">
+            自我介紹
+          </h3>
+          <br>
+          <table>
+            <td>姓名:</td>
+            <td>
+              詹欣儒
+            </td>
+            <tr>
+              <td>性別:</td>
+              <td>女</td>
+            </tr>
+            <tr>
+              <td>年齡:</td>
+              <td>19</td>
+            </tr>
+            <tr>
+              <td>興趣:</td>
+              <td>聽音樂、打羽球</td>
+            </tr>
+          </table>
     
-</body>
+          <br />
+          <p><img src="./DSC02131.JPG" width="300" alt="圖片"></p>
+          <br />
+          <h3 align="center">★平常不論是出去玩或是搭捷運時喜歡沿途看風景拍照，歡迎點選下面連結看看喔~~~</h3>
+    
+          <div class="otherlink">
+            <a href="https://cindychan9256.wixsite.com/my-site-6/gallery">
+              <div style="
+                border-width: 3px;
+                border-style: solid;
+                width: 100px;
+                height: 30px;
+                border-color: rgb(82, 99, 252);
+                padding: 1px;
+                text-align: center;
+              ">
+                相簿連結~
+            </a>
+    
+          </div>
+    
+          </div>
+        </section>
+      </main>
+    </body>
+    
+    </html>
 
-</html>
+
