@@ -17,27 +17,29 @@
   <link rel="shortcut icon" href="./photo/DSC01701.JPG">
   <link rel="shortcut icon" href="./picture/檔案_027.jpeg">
     <link rel="stylesheet" href="./Style.css">
-    <p>
-        <a id="my-click">Click Me</a>
-      </p>
-      
-      <div id="foo" style="border: 1px solid red;">
-        <p>bar</p>
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script>
-        $("#my-click").click(function(){
-          $("#foo").html('<h1>zoo</h1>');
-        })
+          $(document).ready(function(){
+            $("#foo").hide();
+$("#my-click").click(function(){
+          $("#foo").slideToggle(300);
+        return false;})
+          });
+        
+        
       </script>
 </head>
 
 <body>
+    <p>
+        <a id="my-click">Click Me</a>
+      </p>
     <main align="center" valign="center">
-        <section class="left">
-          <h1>
+        <section class="left"><div id="foo">
+          <h1 id="open!">
             Wellcome to My Page~~~
-          </h1>
+          </h1></div>
           <br>
          <h2>
              關於我~
